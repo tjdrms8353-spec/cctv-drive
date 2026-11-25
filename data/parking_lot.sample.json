@@ -1,0 +1,27 @@
+{
+  "name": "parkpick 타워 주차장",
+  "address": "서울특별시 강남구 테헤란로 123",
+  "floors": [
+    { "id": "B1", "label": "지하 1층", "zones": ["A", "B"] },
+    { "id": "B2", "label": "지하 2층", "zones": ["A", "B"] }
+  ],
+  "cameras": [
+    { "id": "CAM-B1-01", "name": "B1 A구역", "floor": "B1", "zone": "A" },
+    { "id": "CAM-B1-02", "name": "B1 B구역", "floor": "B1", "zone": "B" },
+    { "id": "CAM-B2-01", "name": "B2 A구역", "floor": "B2", "zone": "A" }
+  ],
+  "spot_rois": [
+    { "id": "B1-A01", "roi": [50, 100, 250, 220] },
+    { "id": "B1-A02", "roi": [260, 100, 460, 220] },
+    { "id": "B1-A03", "roi": [470, 100, 670, 220] }
+  ],
+  "sample_vehicles": [
+    { "plate": "12가 3456", "spot": "B1-A05", "enteredAt": "2026-11-25 08:42" },
+    { "plate": "34나 7890", "spot": "B2-B11", "enteredAt": "2026-11-25 09:15" },
+    { "plate": "56다 1234", "spot": "B1-B02", "enteredAt": "2026-11-25 10:03" }
+  ],
+  "sources": {
+    "dataset": "AI Hub — 주차 관련 이동체 인지 영상 (K-AI 데이터셋)",
+    "publicApi": "공공데이터포털 주차장 정보 API"
+  }
+}

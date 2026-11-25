@@ -1,0 +1,25 @@
+# ---------- Backend ----------
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-dotenv==1.0.1
+PyJWT==2.10.1
+pydantic==2.10.4
+
+# ---------- AI / CV (김모란) ----------
+opencv-python-headless==4.10.0.84
+numpy==2.2.1
+# 로컬 GPU 환경에서 주석 해제 (CI/Render 슬림 배포 시 제외)
+# torch==2.5.1
+# ultralytics==8.3.40
+# easyocr==1.7.2
+
+# ---------- Data 분석 (이오리) ----------
+pandas==2.2.3
+
+# ---------- DB ----------
+# TiDB/MySQL 사용 시
+# PyMySQL==1.1.1
+# SQLAlchemy==2.0.36
+
+# ---------- 외부 API ----------
+httpx==0.28.1

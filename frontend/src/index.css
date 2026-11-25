@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* 디자인 토큰 — Tailwind v4 CSS-first 설정
+   주차 상태 컬러 시스템: 맵/범례/차트 공통 사용 */
+@theme {
+  --font-display: "Montserrat", "Noto Sans KR", sans-serif;
+  --font-body: "Noto Sans KR", "Pretendard", sans-serif;
+
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-500: #3b5bff;
+  --color-brand-600: #2f49d6;
+  --color-brand-700: #2639ab;
+  --color-brand-900: #17204f;
+
+  --color-spot-free: #22c55e;
+  --color-spot-occupied: #ef4444;
+  --color-spot-disabled: #3b82f6;
+  --color-spot-ev: #06b6d4;
+  --color-spot-reserved: #eab308;
+  --color-spot-event: #f97316;
+
+  --color-ink-900: #0b1220;
+  --color-ink-800: #111a2e;
+  --color-ink-700: #1c2740;
+}
+
+html {
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+}
+
+/* 이상 이벤트 점멸 (주차 상태 컬러 시스템) */
+@keyframes blink-event {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.spot-event {
+  animation: blink-event 1.2s ease-in-out infinite;
+}
+
+/* 스크롤바 (관제 다크 뷰) */
+.dark-scroll::-webkit-scrollbar { width: 6px; }
+.dark-scroll::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}

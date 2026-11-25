@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# 환경 변수 (원본 시크릿은 절대 커밋 금지)
+.env
+
+# 대용량 데이터셋 / 영상 / 모델 가중치 (클라우드 버킷으로 관리)
+data/raw/
+data/videos/
+*.pt
+*.onnx
+*.mp4
+*.avi
+*.zip
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

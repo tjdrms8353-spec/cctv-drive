@@ -1,0 +1,11 @@
+# Netlify 데모 배포 — GitHub 저장소 연결 후 push 시 자동 배포
+# 프런트엔드만 배포하며, 백엔드 미연결 시 Mock 데이터로 동작합니다.
+[build]
+  base = "frontend"
+  command = "npm install && npm run build"
+  publish = "frontend/dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
