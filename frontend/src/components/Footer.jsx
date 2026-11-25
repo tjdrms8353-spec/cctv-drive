@@ -48,12 +48,12 @@ export default function Footer() {
           <h4 className="text-sm font-bold text-slate-700">링크 & 데이터 출처</h4>
           <ul className="mt-3 space-y-2 text-sm text-slate-500">
             <li>
-              <a href="https://github.com/fsclass-n/parkpick" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-brand-600">
+              <a href="https://github.com/tjdrms8353-spec/cctv-drive" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-brand-600">
                 <FontAwesomeIcon icon={faGithub} /> GitHub Repository
               </a>
             </li>
             <li>
-              <a href="https://fsclass-n.github.io/parkpick/" target="_blank" rel="noreferrer" className="hover:text-brand-600">
+              <a href="https://tjdrms8353-spec.github.io/cctv-drive/" target="_blank" rel="noreferrer" className="hover:text-brand-600">
                 프로젝트 안내 페이지
               </a>
             </li>
