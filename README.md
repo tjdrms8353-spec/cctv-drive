@@ -48,8 +48,8 @@ cd frontend && npm install && npm run dev        # http://localhost:5173
 
 ## 배포 (push 기반 자동 배포, deploy hook 미사용)
 
-- **Render**: 대시보드에서 `render.yaml` Blueprint로 연결 → `main` push 시 `parkpick-api` / `parkpick` 자동 배포
-- **Netlify**: 저장소 연결(`netlify.toml` 자동 인식) → push 시 `parkpick.netlify.app` 자동 배포
+- **Render**: 대시보드에서 `render.yaml` Blueprint로 연결 → `main` push 시 `cctv-drive-api` / `cctv-drive` 자동 배포
+- **Netlify**: 저장소 연결(`netlify.toml` 자동 인식) → push 시 `cctv-drive.netlify.app` 자동 배포
 
 ## 데이터 출처
 

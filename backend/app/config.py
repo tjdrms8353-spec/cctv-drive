@@ -18,7 +18,7 @@ CORS_ORIGINS = [
     o.strip()
     for o in os.getenv(
         "CORS_ORIGINS",
-        "http://localhost:5173,https://parkpick.netlify.app,https://parkpick.onrender.com",
+        "http://localhost:5173,https://cctv-drive.netlify.app,https://cctv-drive.onrender.com",
     ).split(",")
     if o.strip()
 ]
